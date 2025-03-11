@@ -66,21 +66,6 @@ Interpretation:
 ## Your Task  
 You will **only modify** `gale_shapley.py`. The other files are **pre-implemented** to provide structure.
 
-### Step 1: Clone the Repository  
-Open a terminal and run:  
-git clone <repository_url>  
-cd <repository_name>  
-
-### Step 2: Implement the Algorithm in `gale_shapley.py`  
-- **Populate the ranking matrix (`rank[][]`)**  
-  - Each intern ranks their preferred positions.  
-  - You will create a 2D list to store these rankings.  
-
-- **Implement the matching loop**  
-  - Positions will **propose** to interns in order of preference.  
-  - Interns will **accept or reject** based on their preference.  
-  - The algorithm continues until all positions are matched.  
-
 Hints are provided in `gale_shapley.py` to guide your implementation.
 
 ---
@@ -94,16 +79,6 @@ Final Stable Matching:
 Position 1 is matched with Intern 1  
 Position 2 is matched with Intern 2  
 Position 3 is matched with Intern 3  
-
----
-
-## Submitting Your Work  
-1. **Stage your changes:**  
-   git add gale_shapley.py  
-2. **Commit your changes:**  
-   git commit -m "Implemented Gale-Shapley Algorithm"  
-3. **Push to the repository:**  
-   git push  
 
 ---
 
