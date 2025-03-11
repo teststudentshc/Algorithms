@@ -48,11 +48,17 @@ Each line represents the ranked preferences of an entity.
 0 2 1 3
 1 0 3 2
 ```
-**Interpretation:**  
-- **Position 1** prefers **Intern 3 > 4 > 2 > 1**  
-- **Position 2** prefers **Intern 2 > 1 > 4 > 3**  
-- **Position 3** prefers **Intern 1 > 2 > 3 > 4**  
-- **Position 4** prefers **Intern 4 > 3 > 1 > 2**  
+### **Interpretation of `positions.txt`**
+
+
+| **Position** | **Preference Order (1st → Last)** |
+|-------------|----------------------------------|
+| **1**       | **Intern 4 > Intern 2 > Intern 3 > Intern 1** |
+| **2**       | **Intern 3 > Intern 4 > Intern 1 > Intern 2** |
+| **3**       | **Intern 1 > Intern 3 > Intern 2 > Intern 4** |
+| **4**       | **Intern 2 > Intern 1 > Intern 4 > Intern 3** |
+
+---
 
 ### Example: `interns.txt`  
 ```
@@ -62,11 +68,17 @@ Each line represents the ranked preferences of an entity.
 3 2 0 1
 ```
 
-**Interpretation:**  
-- **Intern 1** prefers **Position 4 > 2 > 3 > 1**  
-- **Intern 2** prefers **Position 3 > 4 > 1 > 2**  
-- **Intern 3** prefers **Position 1 > 3 > 2 > 4**  
-- **Intern 4** prefers **Position 2 > 1 > 4 > 3**  
+### **Interpretation of `interns.txt`**
+
+
+| **Intern**  | **Preference Order (1st → Last)** |
+|------------|----------------------------------|
+| **1**      | **Position 3 > Position 4 > Position 2 > Position 1** |
+| **2**      | **Position 2 > Position 1 > Position 4 > Position 3** |
+| **3**      | **Position 1 > Position 2 > Position 3 > Position 4** |
+| **4**      | **Position 4 > Position 3 > Position 1 > Position 2** |
+
+
 ---
 
 ## Your Task  
