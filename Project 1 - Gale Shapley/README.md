@@ -42,25 +42,28 @@ Both `positions.txt` and `interns.txt` follow this format:
 Each line represents the ranked preferences of an entity.
 
 ### Example: `positions.txt`  
-0 1 2  
-1 2 0  
-2 0 1  
+3 1 2 0
+2 3 0 1
+0 2 1 3
+1 0 3 2
 
-Interpretation:  
-- Position 0 prefers intern **0 > 1 > 2**  
-- Position 1 prefers intern **1 > 2 > 0**  
-- Position 2 prefers intern **2 > 0 > 1**  
+**Interpretation:**  
+- **Position 1** prefers **Intern 3 > 4 > 2 > 1**  
+- **Position 2** prefers **Intern 2 > 1 > 4 > 3**  
+- **Position 3** prefers **Intern 1 > 2 > 3 > 4**  
+- **Position 4** prefers **Intern 4 > 3 > 1 > 2**  
 
 ### Example: `interns.txt`  
-0 1 2  
-1 2 0  
-2 0 1  
+2 3 1 0
+1 0 3 2
+0 1 2 3
+3 2 0 1
 
-Interpretation:  
-- Intern 0 prefers position **0 > 1 > 2**  
-- Intern 1 prefers position **1 > 2 > 0**  
-- Intern 2 prefers position **2 > 0 > 1**  
-
+**Interpretation:**  
+- **Intern 1** prefers **Position 4 > 2 > 3 > 1**  
+- **Intern 2** prefers **Position 3 > 4 > 1 > 2**  
+- **Intern 3** prefers **Position 1 > 3 > 2 > 4**  
+- **Intern 4** prefers **Position 2 > 1 > 4 > 3**  
 ---
 
 ## Your Task  
@@ -74,11 +77,11 @@ Hints are provided in `gale_shapley.py` to guide your implementation.
 Once you have implemented `gale_shapley.py`, run:  
 python main.py  
 
-Expected output:  
-Final Stable Matching:  
-Position 1 is matched with Intern 1  
-Position 2 is matched with Intern 2  
-Position 3 is matched with Intern 3  
+Final Stable Matching:
+Position 1 is matched with Intern 3
+Position 2 is matched with Intern 2
+Position 3 is matched with Intern 1
+Position 4 is matched with Intern 4
 
 ---
 
